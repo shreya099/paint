@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/3e0c251e14.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+  </head>
+  <body>
+  <!--   PROJECT1-bg color -->
+<!-- <button class="btn btn-primary">press</button> -->
+
+<!--   PROJECT2-hex color -->
+<!-- <div class="container">
+  <h1>hex=<span class="hex"></span></h1>
+<button class="btn btn-primary">press</button>
+</div> -->
+
+<!--   PROJECT3-quote -->
+<!-- <div class="container">
+  <button class="btn btn-primary">press</button>
+<h1 id="quote">quote</h1>
+<h4 id="author">author :</h4>
+</div> -->
+<div class="field">
+<canvas id="canvas"></canvas>
+ <div class="tool">
+<button onclick="Restore()">Undo</button>
+<button onclick="Clear()">Clear</button>
+
+
+
+<div onclick="change_shape(this)" style="border-radius: 20px;border:2px solid #000" class="color-field"></div>
+
+<svg height="20" width="50"  onclick="change_shape1(this)">
+  <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+  </svg>
+
+
+
+<img src="https://e.staedtlercdn.com/product-images/_processed_/4/0/csm_2989742_Productpicture_862f5b9661.jpeg" onclick="myFunction(this)" width="40px" style="color:#fff">
+<input type="color" oninput="change_b(this)"  placeholder="Colors" class="pi"  >
+<input type="color" oninput="draw_color=this.value"  placeholder="Colors" class="color-picker">
+
+<input type="range" min="1" max="100" class="pen-range" oninput="draw_width=this.value">
+
+
+<button id="download">Download</button>
+</div> 
+</div>
+  <script src="jss.js"></script>
+</body>
+</html>
