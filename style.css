@@ -12,8 +12,17 @@ body{
 }
 */
 
+button{
+  border-radius: 20px;
+  width:9%;
+}
 
+.b{
 
+border-radius: 20%;
+margin-left: 3px;
+background: yellow;
+}
 #canvas {
  border: 1px solid black; 
 
